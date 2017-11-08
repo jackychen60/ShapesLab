@@ -17,12 +17,14 @@ public class Circle implements Shape {
 	 */
 	public Circle(int radius) {
 		// to be implemented by student
+		
 	}
 
 	@Override
 	public double calculateArea() {
 		// to be implemented by student
-		return 0.0;
+		double area= radius*radius*pi;
+		return area;
 	}
 
 	@Override

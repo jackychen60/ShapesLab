@@ -25,6 +25,8 @@ public class ShapeUtilities {
 			return new Rectangle(rand.nextInt(50), rand.nextInt(50));
 		case 2:
 			return new Square(rand.nextInt(50));
+		case 3:
+			return new Triangle(rand.nextInt(100));
 		default:
 			return new Circle(rand.nextInt(100));
 		}
@@ -38,8 +40,8 @@ public class ShapeUtilities {
 	 * @return double
 	 */
 	public static double sumArea(Shape[] shapes) {
-		// To be written by student
-		return 0.0;
+		double allArea = 
+		return allArea;
 	}
 
 	/**
@@ -49,7 +51,7 @@ public class ShapeUtilities {
 	 * @return double
 	 */
 	public static double sumPerimeter(Shape[] shapes) {
-		// To be written by student
+		
 		return 0.0;
 	}
 

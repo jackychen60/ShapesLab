@@ -1,33 +1,39 @@
 
 public class Kite implements Shape {
 
-	private int longDiagonal;
-	private int shortDiagonal;
+	private int angle;
 	private int sideA;
 	private int sideB;
 
-	public Kite(int longDiagonal, int shortDiagonal, int sideA, int sideB) {
-		this.longDiagonal = longDiagonal;
-		this.shortDiagonal = shortDiagonal;
+	public Kite(int angle, int sideA, int sideB) {
+		this.angle = angle;
 		this.sideA = sideA;
 		this.sideB =sideB;
 	}
 
-
+/*
+ * Calculates area of a kite
+ * @param sideA,sideB,Angle
+ */
 	public double calculateArea() {
-		double rectangleArea = length * width;
-		return rectangleArea;
+		double kiteArea = sideA * sideB * Math.sin(angle);
+		return kiteArea;
 	}
 
-
+	/*
+	 * Calculates perimeter of a kite
+	 * @param sideA,sideB
+	 */
 	public double calculatePerimeter() {
-		double rectanglePerimeter = 2 * (length + width);
-		return rectanglePerimeter;
+		double kitePerimeter = 2*(sideA +sideB);
+		return kitePerimeter;
 	}
 
-
+	/*
+	 *prints out kite angle, sides, area and perimeter 
+	 */
 	public String toString() {
-		return "Rectangle Width: " + width + " Length: " + length + " Area: " + this.calculateArea() + " Perimeter: "
+		return "Kite Angle: " + angle + " Sides: " + sideA + " and " + sideB + " Area: " + this.calculateArea() + " Perimeter: "
 				+ this.calculatePerimeter();
 	}
 }

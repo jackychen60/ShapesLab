@@ -14,19 +14,27 @@ public class Rectangle implements Shape {
 		this.width = width;
 	}
 
-
+	/*
+	 * Calculates area of a kite
+	 * @param length and width
+	 */
 	public double calculateArea() {
 		double rectangleArea = length * width;
 		return rectangleArea;
 	}
 
-
+	/*
+	 * Calculates perimeter of a kite
+	 * @param length and width
+	 */
 	public double calculatePerimeter() {
 		double rectanglePerimeter = 2 * (length + width);
 		return rectanglePerimeter;
 	}
 
-
+	/*
+	 * Prints length, width, area and perimeter of a rectangle
+	 */
 	public String toString() {
 		return "Rectangle Width: " + width + " Length: " + length + " Area: " + this.calculateArea() + " Perimeter: "
 				+ this.calculatePerimeter();

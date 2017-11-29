@@ -63,11 +63,11 @@ public class ShapeUtilities {
 		return perimeter;
 	}
 
-	public static void countShapes(Shape[] shapes)
+	public static void countShapes(Shape[] shapeArr)
 	{
 		int rectangles = 0;
 		int circles =  0;
-		for(Shape x :shapes)
+		for(Shape x :shapeArr)
 		{
 			if (x instanceof Circle)
 			{
@@ -77,8 +77,7 @@ public class ShapeUtilities {
 			{
 				rectangles++;
 			}
-		
 		}
-		System.out.println(circles + " Circles Found and" + rectangles + "rectangles found");
+			System.out.println(circles + " Circles Found and" + rectangles + "rectangles found");
 	}
 }
